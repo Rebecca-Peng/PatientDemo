@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Camera kit demo</title>
-    <meta name="description" content="Camera kit demo">
-    <meta name="robots" content="noindex">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient App</title>
+  <meta name="description" content="Camera kit demo">
+  <meta name="robots" content="noindex">
 
-    <link href="index.css" rel="stylesheet">
-    <script src="./packed.js"></script>
-  </head>
+  <link href="index.css" rel="stylesheet">
+  <script src="./packed.js"></script>
+</head>
 
-  <body>
-    <div class="poweredbysnap-logo">
-      <img id="image" src="./assets/Powered_bysnap.png" alt="Powered by Snap">
-    </div>
-    <canvas id="canvas"></canvas>
-    <video id="video" style="display: none;" autoplay muted playsinline></video>
-  </body>
+<body>
+  <!-- Company Logo -->
+  <div class="company-logo">
+    <img src="./assets/Powered_bysnap.png" alt="Company Logo">
+  </div>
+
+  <canvas id="canvas"></canvas>
+  <video id="video" style="display: none;" autoplay muted playsinline></video>
+
+  <!-- Link to Privacy Policy (in a separate HTML file) -->
+  <div class="privacy-link" style="margin-top: 20px; text-align: center;">
+    <a href="./privacy.html" target="_blank" style="font-size: 16px; color: #007BFF; text-decoration: none;">
+      View Privacy Policy
+    </a>
+  </div>
+</body>
 </html>
