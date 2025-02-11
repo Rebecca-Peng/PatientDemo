@@ -1,3 +1,5 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +14,7 @@
 </head>
 
 <body>
-  <!-- Company Logo -->
+  <!-- Existing elements -->
   <div class="company-logo">
     <img src="./assets/Powered_bysnap.png" alt="Company Logo">
   </div>
@@ -20,10 +22,25 @@
   <canvas id="canvas"></canvas>
   <video id="video" style="display: none;" autoplay muted playsinline></video>
 
-  <!-- Link to Privacy Policy (in a separate HTML file) -->
-  <div class="privacy-link" style="margin-top: 20px; text-align: center;">
-    <a href="./privacy.html" target="_blank" style="font-size: 16px; color: #007BFF; text-decoration: none;">
-      View Privacy Policy
+  <!-- High z-index link to privacy.html -->
+  <div
+    class="privacy-link"
+    style="
+      position: absolute; 
+      top: 20px; 
+      right: 20px; 
+      z-index: 9999; 
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px; 
+      border-radius: 5px;
+    "
+  >
+    <a
+      href="./privacy.html"
+      target="_blank"
+      style="font-size: 16px; color: #007BFF; text-decoration: none;"
+    >
+      Privacy Policy
     </a>
   </div>
 </body>
