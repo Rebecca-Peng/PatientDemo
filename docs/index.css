@@ -55,18 +55,21 @@ body {
     width: 300px;
   }
 
-  .poweredbysnap-logo {
-    width: 100%;
-    position: absolute;
-    bottom: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+/* Position the Snap logo at the bottom and center it */
+.poweredbysnap-logo {
+  position: absolute;
+  bottom: 20px;     /* Adjust spacing from bottom */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .poweredbysnap-logo > img {
-    width: 200px;
-  }
+/* Make the Snap logo smaller */
+.poweredbysnap-logo > img {
+  width: 80px;      /* Adjust the size as you see fit */
+  height: auto;     /* Maintain aspect ratio */
+}
 
 .privacy-link {
   position: absolute;
