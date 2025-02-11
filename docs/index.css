@@ -67,3 +67,21 @@ body {
   .poweredbysnap-logo > img {
     width: 200px;
   }
+
+.privacy-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+}
+.privacy-link a {
+  font-size: 16px;
+  color: #007BFF;
+  text-decoration: none;
+}
+.privacy-link a:hover {
+  text-decoration: underline;
+}
