@@ -5,7 +5,7 @@ import{
 }from '@snap/camera-kit'
 
 (async function (){
-    var cameraKit = await bootstrapCameraKit({ apiToken: 'eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNjk2NDQ0OTg2LCJzdWIiOiI4MGQwNWZjNC0yMjc1LTQ4NTYtODBmNy1iYWY2Y2EzMDY5MmN-U1RBR0lOR34yZjU0ZmU2Yy03NTA0LTQzNzItODMzZi0zZjRhNTliOGZlYmIifQ.UzD-l6Zj8awB1n3isn6fi75I7TKNwAgy3wjBgs16GdQ'})
+    var cameraKit = await bootstrapCameraKit({ apiToken: 'eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM0OTg0ODAwLCJzdWIiOiIyMDVhYTNlMy0zZGIxLTQyOWUtOTg1My0wODc2ZDcxYmZiZTl-U1RBR0lOR344ZmY4NTY1ZC1lODFjLTQxNDItYTlhYi1hMmY4ODE3MTUxNmIifQ.IFchVq8Yo7W0YHDn_qPz0H5MHAHEZIjE1FC2YaTLYVc'})
 
     const session = await cameraKit.createSession()
     document.getElementById('canvas').replaceWith(session.output.live)
